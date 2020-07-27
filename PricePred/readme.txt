@@ -1,0 +1,1 @@
+Using SMP 500 index as input data to predict future price trend

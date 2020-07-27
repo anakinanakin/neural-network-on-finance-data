@@ -1,0 +1,1 @@
+SMP 500 close price trend labeling and trading algorithm labeling

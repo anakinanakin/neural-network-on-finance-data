@@ -1,0 +1,1 @@
+Simple trading algorithm with profit calculation
