@@ -14,7 +14,7 @@ def date_range(start_date, end_date):
         yield start_date + timedelta(n)
 
 def main():
-    client = mg.MongoClient('***REMOVED***')
+    client = mg.MongoClient('your mongodb client')
     db = client['twse']
     col = db['tw50']
     code = '2330'
