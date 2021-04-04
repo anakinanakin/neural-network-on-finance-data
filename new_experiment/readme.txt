@@ -1,1 +1,0 @@
-Large experiments on SMP 500 index close price trend prediction with multiple configurations

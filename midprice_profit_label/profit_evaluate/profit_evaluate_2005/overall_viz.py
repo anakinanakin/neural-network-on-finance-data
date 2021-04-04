@@ -570,11 +570,26 @@ def plot_heatmap():
 	plt.xlabel('Threshold')
 	plt.ylabel('K')
 
-
-
 	plt.savefig('201001~06_heatmap.png')
 	plt.clf()
 
+
+def plot_contour():
+
+	total_cost_return1, avg_list , med_list, zero_list = draw_k(total_return, trade_time, 4)
+
+	plt.title('Profit with cost bp1')
+	# plt.imshow(total_cost_return1,cmap='tab20c')
+	# plt.colorbar()
+	c = plt.contour(total_cost_return1, levels=20)
+	# plt.clabel(c, inline=True, fmt='%1.0f')
+	plt.colorbar()
+	plt.xticks(np.arange(0, 51, step=5), (str((i*5)) for i in range(51)))
+	plt.yticks(np.arange(0, 20, step=1), (str((i+1)*10) for i in range(20)))
+	plt.xlabel('Threshold')
+	plt.ylabel('K')
+
+	plt.savefig('contour.png')
 
 
 if __name__ == '__main__':
@@ -582,6 +597,7 @@ if __name__ == '__main__':
 	#plot_by_threshold()
 	#plot_by_day()
 	#draw_day(total_return, trade_time, 1)
-	plot_heatmap()
+	# plot_heatmap()
+	plot_contour()
 	#sharpe_ratio(total_return, trade_time, 1)
 
