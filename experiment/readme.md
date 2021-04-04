@@ -2,7 +2,7 @@
 
 `2-class_experiment` (**2-class**)/   run with gpu, batch_size=512
 
-​	Label by trading strategy(redmine #3855). 
+​	Label by trading strategy
 
 ​	Label each day separately. Delete no trading part in the beginning of each day, leave only 2 class(red: buy, green: sell)
 
@@ -10,7 +10,7 @@
 
 `3-class_experiment` (**3-class**)/
 
-​	Label by close price trend algorithm(redmine #3855: Benchmark Dataset)
+​	Label by close price trend algorithm
 
 ​	Label each day separately.
 
