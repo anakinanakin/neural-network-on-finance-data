@@ -91,7 +91,7 @@ def trans2rect(arr):
 
 # draw trade price and mid price
 def draw_price():
-    client = mg.MongoClient('***REMOVED***')
+    client = mg.MongoClient('your mongodb client')
     db = client['twse']
     col = db['tw50']
     code = '2330'
@@ -145,7 +145,7 @@ def draw_price():
 
 # labeling mid price trend
 def labeling():
-    client = mg.MongoClient('***REMOVED***')
+    client = mg.MongoClient('your mongodb client')
     db = client['twse']
     col = db['tw50']
     code = '2330'
